@@ -66,9 +66,9 @@
             </aside>
             <main>
                 <div id="open-contact">
-                    <img src="img/avatar_1.jpg" alt="">
+                    <img :src="contacts[activeChat].avatar + '.jpg'" alt="">
                     <div>
-                        <h2>Michele</h2>
+                        <h2>{{ contacts[activeChat].name }}</h2>
                         <p>Ultimo accesso oggi alle 12:00</p>
                     </div>
                     <i class="fa-solid fa-magnifying-glass"></i>
