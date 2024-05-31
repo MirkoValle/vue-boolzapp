@@ -31,3 +31,8 @@ Creo una sezione in absolute per l'app.
 Divido l'app in due contenuti tra la lista chat e la chat aperta.
 Imposto il CSS per ogni parte e per le signole conversazioni.
 Creo un v-for per mostrare ogni contatto
+
+
+Milestone2:
+Creo un v-for per mostrare i messaggi nella chat
+Creo una funzione per mostrare la chat del contatto selezionato
