@@ -15,8 +15,10 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -59,35 +61,39 @@
                             </div>
                             <p>12:00</p>
                         </li>
-                        <li>
-                            <img src="img/avatar_1.jpg" alt="">
-                            <div>
-                                <h2>Michele</h2>
-                                <p>Ultimo messaggi inviato</p>
-                            </div>
-                            <p>12:00</p>
-                        </li>
-                        <li>
-                            <img src="img/avatar_1.jpg" alt="">
-                            <div>
-                                <h2>Michele</h2>
-                                <p>Ultimo messaggi inviato</p>
-                            </div>
-                            <p>12:00</p>
-                        </li>
                     </ul>
                 </section>
             </aside>
             <main>
-                <div id="open-contact"></div>
+                <div id="open-contact">
+                    <img src="img/avatar_1.jpg" alt="">
+                    <div>
+                        <h2>Michele</h2>
+                        <p>Ultimo accesso oggi alle 12:00</p>
+                    </div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
                 <section id="chat">
                     <ul>
-                        <li></li>
+                        <li class="green">
+                            <p>Hai portato a spasso il cane?</p>
+                            <p class="ora">15:30</p>
+                        </li><li class="green">
+                            <p>Ricordati di stendere i panni</p>
+                            <p class="ora">15:50</p>
+                        </li>
+                        <li class="white">
+                            <p>Tutto fatto!</p>
+                            <p class="ora">16:15</p>
+                        </li>
                     </ul>
                 </section>
                 <div id="send-message">
+                    <i class="fa-regular fa-face-smile"></i>
                     <input type="text" placeholder="Scrivi un messaggio">
-
+                    <i class="fa-solid fa-microphone"></i>
                 </div>
             </main>
 

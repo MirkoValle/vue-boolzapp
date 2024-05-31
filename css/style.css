@@ -46,6 +46,8 @@ aside {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     background-color: #eaeaea;
     width: 75%;
 }
@@ -129,9 +131,10 @@ div#search div input {
 section#contacts {
     height: 100%;
     background-color: #ffffff;
+    overflow: scroll;
 }
 
-section#contacts li{
+section#contacts li {
     padding: 1rem;
     display: flex;
     color: #b1b1b1;
@@ -143,17 +146,105 @@ section#contacts li img {
     border-radius: 50%;
 }
 
-section#contacts li div{
+section#contacts li div {
     padding-left: 1rem;
     width: 100%;
 }
 
-section#contacts li div h2{
+section#contacts li div h2 {
     color: black;
     font-size: 1rem;
     font-weight: 500;
 }
 
-section#contacts li p{
+section#contacts li p {
     font-size: .8rem;
+}
+
+div#open-contact {
+    display: flex;
+    align-items: center;
+    padding: .75rem;
+    width: 100%;
+    color: #b1b1b1;
+}
+
+div#open-contact img {
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+div#open-contact div {
+    padding-left: 1rem;
+    width: 100%;
+}
+
+div#open-contact div h2 {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+div#open-contact i {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+section#chat {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/mine.jpg);
+    padding: 3rem 7rem;
+    overflow: scroll;
+}
+
+
+section#chat ul {
+    display: flex;
+    flex-direction: column;
+}
+
+section#chat li {
+    width: 20rem;
+    border-radius: .7rem;
+    padding: 1rem .5rem .5rem 1rem;
+    margin-bottom: .7rem;
+}
+
+section#chat li p.ora {
+    text-align: end;
+    font-size: .7rem;
+    color: #b1b1b1;
+}
+
+section#chat li.green {
+    background-color: #d5f9ba;
+    align-self: end;
+
+}
+
+section#chat li.white {
+    background-color: white;
+}
+
+div#send-message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background-color: #f3eeea;
+}
+
+div#send-message i {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    color: #6a7277;
+}
+
+div#send-message input{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: .3rem;
+    padding: 0 1rem;
 }
