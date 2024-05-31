@@ -217,13 +217,13 @@ section#chat li p.ora {
     color: #b1b1b1;
 }
 
-section#chat li.green {
+section#chat li.sent {
     background-color: #d5f9ba;
     align-self: end;
 
 }
 
-section#chat li.white {
+section#chat li.received {
     background-color: white;
 }
 

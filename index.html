@@ -53,7 +53,7 @@
                 </div>
                 <section id="contacts">
                     <ul>
-                        <li v-for="(contact, index) in contacts">
+                        <li v-for="(contact, index) in contacts" @click="changeChat(index)">
                             <img :src="contact.avatar + '.jpg'" alt="">
                             <div>
                                 <h2>{{ contact.name }}</h2>
@@ -77,16 +77,9 @@
                 </div>
                 <section id="chat">
                     <ul>
-                        <li class="green">
-                            <p>Hai portato a spasso il cane?</p>
-                            <p class="ora">15:30</p>
-                        </li><li class="green">
-                            <p>Ricordati di stendere i panni</p>
-                            <p class="ora">15:50</p>
-                        </li>
-                        <li class="white">
-                            <p>Tutto fatto!</p>
-                            <p class="ora">16:15</p>
+                        <li v-for="message in contacts[activeChat].messages" :class="message.status">
+                            <p>{{ message.message }}</p>
+                            <p class="ora">{{ message.date}}</p>
                         </li>
                     </ul>
                 </section>

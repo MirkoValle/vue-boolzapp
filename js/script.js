@@ -165,14 +165,16 @@ createApp({
                             status: 'received'
                         }
                     ],
+
                 }
-            ]
-            
-
-
-
+            ],
+            activeChat: 0,
         }
     },
     methods: {
+
+        changeChat: function (index) {
+            this.activeChat = index;
+        },
     }
 }).mount('#app');
