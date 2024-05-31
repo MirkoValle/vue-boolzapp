@@ -22,6 +22,10 @@ div.gray-bg {
     height: 85%;
 }
 
+ul {
+    list-style: none;
+}
+
 section.main-container {
     position: absolute;
     top: 2rem;
@@ -87,13 +91,35 @@ div#notifications i {
     margin-right: 1rem;
 }
 
-div#notifications h2{
+div#notifications h2 {
     font-size: 1rem;
     font-weight: 500;
 }
 
-div#notifications p{
+div#notifications p {
     font-size: .8rem;
     color: #627375;
     text-decoration: underline;
+}
+
+
+div#search {
+    background-color: #f9f9f9;
+    padding: .5rem;
+}
+
+div#search div {
+    background-color: white;
+    display: flex;
+}
+
+div#search div i {
+    padding: .5rem 1.5rem;
+    color: #b1b1b1;
+}
+
+div#search div input {
+    border: none;
+    padding-left: .5rem;
+    width: 100%;
 }
