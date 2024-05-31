@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+div.green-bg {
+    background-color: #009688;
+    height: 15%;
+}
+
+div.gray-bg {
+    background-color: #d9dbd3;
+    height: 85%;
+}
+
+section.main-container {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    height: 93vh;
+    width: 80vw;
+}
