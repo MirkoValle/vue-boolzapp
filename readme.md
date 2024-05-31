@@ -21,3 +21,13 @@ Si possono trascurare le scrollbar verticali, sia nel pannello dei messaggi, che
 I pulsanti e le icone possono non funzionare (a parte l’invio del messaggio)
 Per gestire le date, può essere utile la libreria Luxon
 La struttura dell’array dei contatti potrebbe avere questa forma:
+
+
+
+SCOMPOSIZIONE
+
+Milestone1:
+Creo una sezione in absolute per l'app.
+Divido l'app in due contenuti tra la lista chat e la chat aperta.
+Imposto il CSS per ogni parte e per le signole conversazioni.
+Creo un v-for per mostrare ogni contatto
