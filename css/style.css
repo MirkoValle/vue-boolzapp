@@ -38,6 +38,8 @@ section.main-container {
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
     background-color: #eaeaea;
     width: 35%;
     border-right: 2px solid #dcdcdc;
@@ -122,4 +124,36 @@ div#search div input {
     border: none;
     padding-left: .5rem;
     width: 100%;
+}
+
+section#contacts {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+section#contacts li{
+    padding: 1rem;
+    display: flex;
+    color: #b1b1b1;
+    border-top: 1px solid #ececec;
+}
+
+section#contacts li img {
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+section#contacts li div{
+    padding-left: 1rem;
+    width: 100%;
+}
+
+section#contacts li div h2{
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+section#contacts li p{
+    font-size: .8rem;
 }
