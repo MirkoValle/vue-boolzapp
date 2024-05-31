@@ -13,6 +13,10 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,8 +25,24 @@
     <div id="app">
         <section class="main-container">
             <aside>
-                <div id="account"></div>
-                <div id="notifications"></div>
+                <div id="account">
+                    <div>
+                        <img src="img/avatar_io.jpg" alt="">
+                        <h2>Sofia</h2>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div id="notifications">
+                    <i class="fa-solid fa-bell-slash"></i>
+                    <div>
+                        <h2>Ricevi notifiche di nuovi messaggi</h2>
+                        <p>Attiva notifiche desktop</p>
+                    </div>
+                </div>
                 <div id="search"></div>
                 <section id="contacts">
                     <ul>
