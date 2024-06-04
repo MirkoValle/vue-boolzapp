@@ -144,6 +144,10 @@ section#contacts li {
     cursor: pointer;
 }
 
+section#contacts li:hover{
+    background-color: #f7f6f6;
+}
+
 section#contacts li.active{
     background-color: #e9ebeb;
 }
