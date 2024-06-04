@@ -1,4 +1,4 @@
-const { createApp } = Vue
+const { createApp } = Vue;
 
 const { DateTime } = luxon;
 
@@ -172,6 +172,7 @@ createApp({
             ],
             activeChat: 0,
             newMessage: "",
+            search: "",
         }
     },
     methods: {
@@ -201,6 +202,11 @@ createApp({
             }
         },
 
+
+        searchContact: function (contact) {
+            contactName = (contact.name.toLowerCase().indexOf(this.search.toLowerCase()) > - 1);
+            return contactName
+        },
 
 
         formatDateTime: function (date) {
