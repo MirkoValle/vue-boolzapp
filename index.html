@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js "></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,13 +54,14 @@
                 </div>
                 <section id="contacts">
                     <ul>
-                        <li v-for="(contact, index) in contacts" @click="changeChat(index)">
+                        <li v-for="(contact, index) in contacts" @click="changeChat(index)"
+                        :class="index == activeChat ? 'active' : '' ">
                             <img :src="contact.avatar + '.jpg'" alt="">
                             <div>
                                 <h2>{{ contact.name }}</h2>
                                 <p>{{ contact.messages[contact.messages.length -1].message }}</p>
                             </div>
-                            <p> {{ contact.messages[contact.messages.length -1].date }}</p>
+                            <p> {{ formatDateTime(contact.messages[contact.messages.length -1].date) }}</p>
                         </li>
                     </ul>
                 </section>
@@ -79,7 +81,7 @@
                     <ul>
                         <li v-for="message in contacts[activeChat].messages" :class="message.status">
                             <p>{{ message.message }}</p>
-                            <p class="ora">{{ message.date}}</p>
+                            <p class="ora">{{ formatDateTime(message.date)}}</p>
                         </li>
                     </ul>
                 </section>

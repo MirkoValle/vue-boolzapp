@@ -1,5 +1,7 @@
 const { createApp } = Vue
 
+const { DateTime } = luxon;
+
 
 createApp({
     data() {
@@ -181,14 +183,30 @@ createApp({
         sendNewMessage: function () {
             if (this.newMessage.trim().length > 0) {
                 const message = {
-                    date: '10/01/2020 15:51:00',
+                    date: luxon.DateTime.now().toFormat('dd/MM/yyyy HH:mm:ss'),
                     message: this.newMessage,
                     status: 'sent'
                 }
                 this.contacts[this.activeChat].messages.push(message);
                 this.newMessage = "";
+
+                setTimeout(() => {
+                    const answer = {
+                        date: luxon.DateTime.now().toFormat('dd/MM/yyyy HH:mm:ss'),
+                        message: "Ok",
+                        status: "received"
+                    }
+                    this.contacts[this.activeChat].messages.push(answer);
+                }, 1000);
             }
-        }
+        },
+
+
+
+        formatDateTime: function (date) {
+            return DateTime.fromFormat(date, 'dd/MM/yyyy HH:mm:ss').toFormat('HH:mm');
+        },
+
 
     }
 }).mount('#app');

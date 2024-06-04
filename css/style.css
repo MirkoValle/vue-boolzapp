@@ -144,6 +144,10 @@ section#contacts li {
     cursor: pointer;
 }
 
+section#contacts li.active{
+    background-color: #e9ebeb;
+}
+
 section#contacts li img {
     width: 3.5rem;
     border-radius: 50%;
