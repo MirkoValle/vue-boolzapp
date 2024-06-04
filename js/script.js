@@ -213,6 +213,12 @@ createApp({
             return DateTime.fromFormat(date, 'dd/MM/yyyy HH:mm:ss').toFormat('HH:mm');
         },
 
+        messageOptions(index) {
+            this.$refs.options[index].classList.toggle("show");
+        },
 
+        deleteMessage: function(index) {
+            this.contacts[this.activeChat].messages.splice(index,1)
+        },
     }
 }).mount('#app');

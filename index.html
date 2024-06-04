@@ -79,9 +79,17 @@
                 </div>
                 <section id="chat">
                     <ul>
-                        <li v-for="message in contacts[activeChat].messages" :class="message.status">
+                        <li v-for="(message, index) in contacts[activeChat].messages" :class="message.status">
                             <p>{{ message.message }}</p>
                             <p class="ora">{{ formatDateTime(message.date)}}</p>
+                            <div >
+                                
+                                <i  class="fa-solid fa-chevron-down"  @click="messageOptions(index)"></i>
+                                <ul ref="options">
+                                    <li>Message info</li>
+                                    <li @click="deleteMessage(index)">Delete message</li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </section>
