@@ -85,7 +85,8 @@
                 </section>
                 <div id="send-message">
                     <i class="fa-regular fa-face-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input type="text" placeholder="Scrivi un messaggio" v-model="newMessage"
+                        @keyup.enter="sendNewMessage">
                     <i class="fa-solid fa-microphone"></i>
                 </div>
             </main>
