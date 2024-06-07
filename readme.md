@@ -36,3 +36,17 @@ Creo un v-for per mostrare ogni contatto
 Milestone2:
 Creo un v-for per mostrare i messaggi nella chat
 Creo una funzione per mostrare la chat del contatto selezionato
+
+Milestone3:
+Creo una funzione che si attiva quando l'utente preme invio nell'input di testo.
+La funzione Crea una nuova variabile con le propretà uguali a quelle esistenti che avrò come testo il contenuto dell'input.
+Pusho la variabile nell'array dei messaggi del singolo contatto.
+Imposto un timeout che si attiva subito dopo, facendo la stessa cosa del messaggio inviato ma con stato del messaggio diverso.
+
+Mileston4:
+Creo una funzione che tramite un indexOf di tutti i contatti confronta l'input nella barra di ricerca.
+Se index è maggiore di 0 (ovvero se è presente ) il v-show lo mostra, in caso contrario lo nasconde.
+
+Milestone5:
+Creo una funzione che al click elimina il messaggio selezionato.
+Aggiungo il menù a tendina nei messaggi da mostrare solo al click 
